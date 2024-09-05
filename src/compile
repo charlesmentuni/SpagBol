@@ -1,0 +1,6 @@
+gcc -ansi -c token.c -o token.o
+gcc -ansi -c lexer.c -o lexer.o
+gcc -ansi -c parser.c -o parser.o
+gcc -ansi -c AST.c -o AST.o
+gcc -ansi -c main.c -o main.o
+gcc main.o lexer.o token.o parser.o AST.o -o main
